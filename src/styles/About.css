@@ -1,0 +1,53 @@
+about-container {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 960px) {
+  .about-container {
+    flex-direction: row;
+  }
+}
+
+.carousel-container {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  flex: 1;
+}
+
+.parallax-box {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform-origin: center;
+  transition: transform 0.1s ease-out;
+}  
